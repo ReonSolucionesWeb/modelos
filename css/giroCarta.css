@@ -9,6 +9,7 @@
 .container{
     -webkit-perspective: 800;
     -moz-perspective: 800;
+    -ms-perspective: 800;
     perspective: 800;
 }
 .carta{
@@ -17,9 +18,11 @@
     width: 100%;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
     
     -moz-transform-style: preserve-3d;
     -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
     
     transform-style: preserve-3d;
     transition: all 0.5s;
@@ -30,11 +33,13 @@
     width: 100%;
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
     backface-visibility: hidden;
 }
 .container:hover .carta{
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -44,11 +49,12 @@
     width: 100%;
 }
 .carta .atras{
-    background-color: #d89090;
+    background: #d89090;
     font-family: Helvetica, verdana, arial;
     height: 100%;
     width: 100%;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
